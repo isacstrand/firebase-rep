@@ -2,12 +2,12 @@ import React from 'react';
 
 // --- EDIT CONTENT HERE ---
 const CONTENT = {
-  image: "about-portrait.png", // The file you uploaded
+  image: "about-portrait.jpg", // The file you uploaded
   heading: "THE COMPOSER",
   // You can add as many paragraphs as you want below
   bio: [
-    "Isac Strand specializes in creating immersive sonic worlds for film, television, and interactive media. With a background in classical orchestration and modern electronic synthesis, he bridges the gap between the organic and the synthetic.",
-    "His approach to scoring is deeply rooted in narrative. Every melody, texture, and rhythm is crafted to serve the story, enhancing the emotional arc of the characters and the visual language of the director.",
+    "Isac Strand is a Berlin-based musician from Vaasa, Finland. He studied Songwriting In BIMM University Berlin and has since worked on multiple film scores, as well as a Songwriter, producer, mixer, studio-musician and live performer. ",
+    "He's the co-founder, songwriter and drummer in the rock band Kings & Pills, and has also recorded drums, guitar and piano for other artists such as ALBUS, Sweetspot and Anais Vacariu.",
     "\"Sound is the invisible character in every scene,\" says Isac. \"It dictates how we feel before we even know why.\""
   ]
 };
@@ -23,7 +23,7 @@ export const About: React.FC = () => {
           <div className="relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
              <img 
                src={CONTENT.image} 
-               alt="Portrait" 
+               alt="about-portrait.jpg" 
                className="w-full h-full object-cover"
              />
              <div className="absolute inset-0 border-[1px] border-white/20 m-4 pointer-events-none"></div>

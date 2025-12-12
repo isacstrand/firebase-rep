@@ -11,16 +11,21 @@ const MAIN_VIDEO = {
 
 const SECONDARY_VIDEOS = [
   {
-    title: "THE LAST FRONTIER",
-    subtitle: "Opening Title Sequence",
-    image: "https://images.unsplash.com/photo-1478720568477-152d9b164e63?auto=format&fit=crop&q=80", // Or use a local file like 'video-thumb-1.jpg'
-    link: "#" // You can add a youtube link here if you want to open it
+    // Rename your first small video to: video-1.mp4
+    videoFile: "video-1.mp4", 
+    // You can also add a specific cover image for it (e.g. video-poster-1.jpg)
+    // For now, using a placeholder image so it looks good until you add one.
+    posterImage: "rem.png", 
+    title: "REM",
+    subtitle: "Opening Title Sequence"
   },
   {
+    // Rename your second small video to: video-2.mp4
+    videoFile: "video-2.mp4",
+    // This is using the file you already uploaded
+    posterImage: "studio-session.png",
     title: "RECORDING SESSIONS",
-    subtitle: "Air Studios, London",
-    image: "studio-session.png", // Your uploaded studio image
-    link: "#"
+    subtitle: "Air Studios, London"
   }
 ];
 // -------------------------
@@ -33,7 +38,7 @@ export const Videos: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Main Video - Showreel */}
-          <div className="col-span-1 md:col-span-2 flex flex-col gap-4 group">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-4 group mb-8">
             <div className="relative aspect-video bg-neutral-800 overflow-hidden shadow-2xl border border-neutral-800">
                 <video 
                     className="w-full h-full object-cover"
@@ -44,7 +49,7 @@ export const Videos: React.FC = () => {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div className="flex flex-col items-center text-center mt-4">
+            <div className="flex flex-col items-center text-center mt-2">
                 <h3 className="text-2xl font-display font-bold text-white">{MAIN_VIDEO.title}</h3>
                 <p className="text-lg text-brand-gold mt-1">{MAIN_VIDEO.subtitle}</p>
             </div>
@@ -52,16 +57,21 @@ export const Videos: React.FC = () => {
 
           {/* Secondary Videos Grid */}
           {SECONDARY_VIDEOS.map((video, index) => (
-            <div key={index} className="relative aspect-video bg-neutral-800 group cursor-pointer overflow-hidden border border-neutral-800">
-               <img src={video.image} alt={video.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-               <div className="absolute inset-0 flex items-center justify-center">
-                   <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center pl-1 group-hover:bg-white group-hover:text-black transition-all duration-300">
-                      <Play size={32} fill="currentColor" />
-                  </div>
+            <div key={index} className="flex flex-col gap-3 group">
+               <div className="relative aspect-video bg-neutral-800 overflow-hidden border border-neutral-800 shadow-lg">
+                  <video 
+                      className="w-full h-full object-cover"
+                      controls
+                      poster={video.posterImage}
+                  >
+                      <source src={video.videoFile} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
                </div>
-               <div className="absolute bottom-6 left-6">
-                  <h3 className="text-xl font-display font-bold">{video.title}</h3>
-                  <p className="text-sm text-neutral-300">{video.subtitle}</p>
+               {/* Text moved below video for better usability with controls */}
+               <div className="px-1">
+                  <h3 className="text-xl font-display font-bold text-white">{video.title}</h3>
+                  <p className="text-sm text-neutral-400 mt-1">{video.subtitle}</p>
                </div>
             </div>
           ))}

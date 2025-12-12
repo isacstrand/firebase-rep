@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 // --- EDIT CONTENT HERE ---
 const CONTENT = {
-  backgroundImage: "hero-background.png", // The file you uploaded
+  backgroundImage: "hero-background.jpg", // The file you uploaded
   title: "Isac Strand",
   subtitle: "Composer • Sound Designer • Producer",
   buttonText: "Latest Scores"
@@ -22,15 +22,15 @@ export const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
         <img 
           src={CONTENT.backgroundImage}
           alt="Hero Background" 
-          className="w-full h-full object-cover object-center"
+          className="w-100 h-100 object-cover object-center"
         />
         {/* Overlay: opacity-30 allows the background to be seen but keeps text readable */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-white mb-6 tracking-tighter uppercase mix-blend-overlay opacity-90">
+        <h1 className="text-5xl md:text-8xl lg:text-9xl font-display font-bold text-white mb-6 tracking-tighter uppercase mix-blend-overlay opacity-85">
           {CONTENT.title}
         </h1>
         <p className="text-brand-gold font-sans font-light tracking-[0.3em] text-sm md:text-lg mb-12 uppercase">

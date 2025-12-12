@@ -7,19 +7,19 @@ const ALBUMS = [
   { 
     id: '1', 
     title: 'JOY', 
-    year: '2024', 
+    year: '2025', 
     coverUrl: 'album-1.jpg' // Placeholder name
   },
   { 
     id: '2', 
     title: 'SEX 101', 
-    year: '2024', 
+    year: '2025', 
     coverUrl: 'album-2.jpg' 
   },
   { 
     id: '3', 
-    title: 'THIS IS NOT RELIGIOUS', 
-    year: '2023', 
+    title: 'THIS IS NOT RELIGIOUS OR SPIRITUAL', 
+    year: '2025', 
     coverUrl: 'album-3.jpg' 
   },
 ];
