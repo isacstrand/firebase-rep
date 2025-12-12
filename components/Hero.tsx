@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 // --- EDIT CONTENT HERE ---
 const CONTENT = {
-  backgroundImage: "hero-background.jpg", // The file you uploaded
+  backgroundImage: "/hero-background.jpg", // The file you uploaded
   title: "Isac Strand",
   subtitle: "Composer • Sound Designer • Producer",
   buttonText: "Latest Scores"

@@ -3,8 +3,8 @@ import { Play } from 'lucide-react';
 
 // --- EDIT CONTENT HERE ---
 const MAIN_VIDEO = {
-  videoFile: "showreel.mp4",     // Your uploaded video file
-  posterImage: "video-poster.png", // Your uploaded cover image
+  videoFile: "/showreel.mp4",     // Your uploaded video file
+  posterImage: "/video-poster.png", // Your uploaded cover image
   title: "Film Composer Showreel 2025",
   subtitle: "Isac Strand"
 };
@@ -12,10 +12,10 @@ const MAIN_VIDEO = {
 const SECONDARY_VIDEOS = [
   {
     // Rename your first small video to: video-1.mp4
-    videoFile: "video-1.mp4", 
+    videoFile: "/video-1.mp4", 
     // You can also add a specific cover image for it (e.g. video-poster-1.jpg)
     // For now, using a placeholder image so it looks good until you add one.
-    posterImage: "rem.png", 
+    posterImage: "/rem.png", 
     title: "REM",
     subtitle: "Opening Title Sequence"
   },

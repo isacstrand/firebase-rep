@@ -2,7 +2,7 @@ import React from 'react';
 
 // --- EDIT CONTENT HERE ---
 const CONTENT = {
-  image: "about-portrait.jpg", // The file you uploaded
+  image: "/about-portrait.jpg", // The file you uploaded
   heading: "THE COMPOSER",
   // You can add as many paragraphs as you want below
   bio: [

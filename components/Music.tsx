@@ -8,19 +8,19 @@ const ALBUMS = [
     id: '1', 
     title: 'JOY', 
     year: '2025', 
-    coverUrl: 'album-1.jpg' // Placeholder name
+    coverUrl: '/album-1.jpg' // Placeholder name
   },
   { 
     id: '2', 
     title: 'SEX 101', 
     year: '2025', 
-    coverUrl: 'album-2.jpg' 
+    coverUrl: '/album-2.jpg' 
   },
   { 
     id: '3', 
     title: 'THIS IS NOT RELIGIOUS OR SPIRITUAL', 
     year: '2025', 
-    coverUrl: 'album-3.jpg' 
+    coverUrl: '/album-3.jpg' 
   },
 ];
 
@@ -28,7 +28,7 @@ const FEATURED_ALBUM = {
   title: "REM",
   director: "Sebastiano Corti",
   description: "A psychological thriller score exploring the boundaries between dreams and reality.",
-  coverUrl: "album-featured.jpg" // Rename your main album art to this
+  coverUrl: "/album-featured.jpg" // Rename your main album art to this
 };
 // -------------------------
 
