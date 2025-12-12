@@ -5,9 +5,9 @@ import { Instagram, Linkedin, Twitter, Mail } from 'lucide-react';
 const CONTACT_CONFIG = {
   title: "CONTACT",
   subtitle: "For scoring commissions, licensing inquiries, or collaborations.",
-  email: "contact@isacstrand.com", // This will be used for the mailto link
+  email: "isacstrandmusic@gmail.com", // This will be used for the mailto link
   socials: {
-    instagram: "#",
+    instagram: "#https://www.instagram.com/isac.strand/",
     linkedin: "#",
     twitter: "#"
   }
