@@ -7,7 +7,7 @@ const CONTACT_CONFIG = {
   subtitle: "For scoring commissions, licensing inquiries, or collaborations.",
   email: "isacstrandmusic@gmail.com", // This will be used for the mailto link
   socials: {
-    instagram: "#https://www.instagram.com/isac.strand/",
+    instagram: "https://www.instagram.com/isac.strand/",
     linkedin: "#",
     twitter: "#"
   }

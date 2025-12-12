@@ -28,7 +28,9 @@ const FEATURED_ALBUM = {
   title: "REM",
   director: "Sebastiano Corti",
   description: "A psychological thriller score exploring the boundaries between dreams and reality.",
-  coverUrl: "/album-featured.jpg" // Rename your main album art to this
+  coverUrl: "/album-featured.jpg", // Rename your main album art to this
+  soundcloudUrl: "https://soundcloud.com/isac-strand-403807537/sets/rem-original-soundtrack?si=5014cbd085f7413ebd249e627d5d2a30&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  trailerUrl: "/video-1.mp4"
 };
 // -------------------------
 
@@ -60,12 +62,16 @@ export const Music: React.FC = () => {
                     {FEATURED_ALBUM.description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                    <button className="px-8 py-3 bg-black text-white hover:bg-neutral-800 transition-colors tracking-widest text-sm font-bold">
-                        LISTEN TO SCORE
-                    </button>
-                    <button className="px-8 py-3 border border-black text-black hover:bg-black hover:text-white transition-colors tracking-widest text-sm font-bold">
-                        WATCH TRAILER
-                    </button>
+                    <a href={FEATURED_ALBUM.soundcloudUrl} target="_blank" rel="noopener noreferrer">
+                        <button className="px-8 py-3 bg-black text-white hover:bg-neutral-800 transition-colors tracking-widest text-sm font-bold">
+                            LISTEN TO SCORE
+                        </button>
+                    </a>
+                    <a href={FEATURED_ALBUM.trailerUrl} target="_blank" rel="noopener noreferrer">
+                        <button className="px-8 py-3 border border-black text-black hover:bg-black hover:text-white transition-colors tracking-widest text-sm font-bold">
+                            WATCH TRAILER
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
