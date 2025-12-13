@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Instagram, Youtube, Mail, Cloud } from 'lucide-react';
 
 // --- EDIT CONTENT HERE ---
 const CONTACT_CONFIG = {
@@ -8,8 +8,8 @@ const CONTACT_CONFIG = {
   email: "isacstrandmusic@gmail.com", // This will be used for the mailto link
   socials: {
     instagram: "https://www.instagram.com/isac.strand/",
-    linkedin: "#",
-    twitter: "#"
+    youtube: "https://www.youtube.com/@isacstrandmusic",
+    soundcloud: "https://soundcloud.com/isac-strand-403807537/sets/rem-original-soundtrack?si=5014cbd085f7413ebd249e627d5d2a30&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
   }
 };
 // -------------------------
@@ -63,8 +63,8 @@ export const Contact: React.FC = () => {
 
         <div className="flex justify-center gap-8 mb-12">
           <a href={CONTACT_CONFIG.socials.instagram} className="text-neutral-400 hover:text-brand-gold transition-colors"><Instagram size={24} /></a>
-          <a href={CONTACT_CONFIG.socials.linkedin} className="text-neutral-400 hover:text-brand-gold transition-colors"><Linkedin size={24} /></a>
-          <a href={CONTACT_CONFIG.socials.twitter} className="text-neutral-400 hover:text-brand-gold transition-colors"><Twitter size={24} /></a>
+          <a href={CONTACT_CONFIG.socials.youtube} className="text-neutral-400 hover:text-brand-gold transition-colors"><Youtube size={24} /></a>
+          <a href={CONTACT_CONFIG.socials.soundcloud} className="text-neutral-400 hover:text-brand-gold transition-colors"><Cloud size={24} /></a>
           <a href={`mailto:${CONTACT_CONFIG.email}`} className="text-neutral-400 hover:text-brand-gold transition-colors"><Mail size={24} /></a>
         </div>
 
