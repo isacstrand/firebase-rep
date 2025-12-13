@@ -8,7 +8,7 @@ const CONTENT = {
   bio: [
     "Isac Strand is a Berlin-based musician from Vaasa, Finland. He studied Songwriting In BIMM University Berlin and has since worked on multiple film scores, as well as a Songwriter, producer, mixer, studio-musician and live performer. ",
     "He's the co-founder, songwriter and drummer in the rock band Kings & Pills, and has also recorded drums, guitar and piano for other artists such as ALBUS, Sweetspot and Anais Vacariu.",
-    "\"Sound is the invisible character in every scene,\" says Isac. \"It dictates how we feel before we even know why.\""
+    "\"Isac was a true professional, with his eyes set on the final goal, while also not being overly serious, which created a warm and comfortable working environment\""
   ]
 };
 // -------------------------

@@ -17,15 +17,15 @@ const SECONDARY_VIDEOS = [
     // For now, using a placeholder image so it looks good until you add one.
     posterImage: "/rem.png", 
     title: "REM",
-    subtitle: "Opening Title Sequence"
+    subtitle: "Opening Sequence"
   },
   {
     // Rename your second small video to: video-2.mp4
     videoFile: "video-2.mp4",
     // This is using the file you already uploaded
     posterImage: "studio-session.png",
-    title: "RECORDING SESSIONS",
-    subtitle: "Air Studios, London"
+    title: "JOY",
+    subtitle: "Teaser Trailer"
   }
 ];
 // -------------------------
